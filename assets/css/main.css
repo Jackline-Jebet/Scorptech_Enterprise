@@ -250,10 +250,6 @@ h6 {
     position: relative;
   }
 
-  .navmenu ul > li {
-    
-  }
-
   .navmenu a,
   .navmenu a:focus {
     color: var(--nav-color);
@@ -424,8 +420,8 @@ h6 {
     /* display: none; */
     position: fixed;
     right: 0; /* Align menu to the right */
-    width: 50%; /* Adjust width as needed */
-    height: 88vh;
+    width: 67%; /* Adjust width as needed */
+    height: 90vh;
     background: var(--nav-mobile-background-color);
     padding: 0 20px;
     flex-direction: column;
@@ -434,12 +430,15 @@ h6 {
     z-index: 998;
     transition: transform 0.3s ease-in-out;
     transform: translateX(100%); /* Initially off the screen (to the right) */
+    overflow-y: auto;
+    scrollbar-width: none;
   }
 
 
 
  .navmenu.open {
-  left: 0; /* Slide in when open */
+  /* left: 0; Slide in when open */
+  transform: translateX(50%); /* Slide in when open */
 }
 
 
@@ -470,7 +469,7 @@ h6 {
     color: var(--nav-dropdown-color);
     padding: 15px 20px;
     font-family: var(--nav-font);
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 500;
     display: flex;
     align-items: center;
