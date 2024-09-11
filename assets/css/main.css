@@ -420,7 +420,7 @@ h6 {
     /* display: none; */
     position: fixed;
     right: 0; /* Align menu to the right */
-    width: 67%; /* Adjust width as needed */
+    width: 50%; /* Adjust width as needed */
     height: 90vh;
     background: var(--nav-mobile-background-color);
     padding: 0 20px;
@@ -437,8 +437,8 @@ h6 {
 
 
  .navmenu.open {
-  /* left: 0; Slide in when open */
-  transform: translateX(50%); /* Slide in when open */
+  left: 0;
+  /* transform: translateX(50%); */
 }
 
 
@@ -467,7 +467,7 @@ h6 {
   .navmenu a,
   .navmenu a:focus {
     color: var(--nav-dropdown-color);
-    padding: 15px 20px;
+    padding: 12px 20px;
     font-family: var(--nav-font);
     font-size: 15px;
     font-weight: 500;
@@ -516,7 +516,7 @@ h6 {
     display: none;
     /* padding-left: 4px; */
     /* margin: 10px 20px; */
-    margin-left: 10px;
+    margin-left: 2px;
     background-color: var(--nav-dropdown-background-color);
     border: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
     box-shadow: none;
@@ -576,9 +576,28 @@ h6 {
 .navmenu a,
 .navmenu a i {
   transition: all 0.3s ease;
+ }
 }
 
+
+/* Font adjustments for extra small screens */
+@media (max-width: 768px) {
+  .navmenu a {
+    font-size: 14px;
+    padding: 12px 15px;
+  }
+
+  .btn-getstarted {
+    font-size: 10px;
+    padding: 6px 12px;
+  }
+
+  .header .logo img {
+    margin-right: 4px;
+    width: 180px;
+  }
 }
+
 
 /*--------------------------------------------------------------
 # Global Footer
