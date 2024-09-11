@@ -409,7 +409,7 @@ h6 {
     display: block;
     position: absolute;
     right: 20px;
-    top: 32px;
+    top: 27px;
     z-index: 1001;
     color: var(--accent-color);
     line-height: 0;
@@ -421,7 +421,7 @@ h6 {
     position: fixed;
     right: 0; /* Align menu to the right */
     width: 50%; /* Adjust width as needed */
-    height: 90vh;
+    height: 86vh;
     background: var(--nav-mobile-background-color);
     padding: 0 20px;
     flex-direction: column;
@@ -551,7 +551,7 @@ h6 {
   .mobile-nav-active .mobile-nav-toggle {
     color: var(--accent-color);
     font-size: 32px;
-    top: 29px;
+    top: 25px;
     position: fixed;
     margin-right: 0;
     z-index: 999;
@@ -587,14 +587,18 @@ h6 {
     padding: 12px 15px;
   }
 
+  .navmenu {
+    width: 50%; /* Increase the width for very small screens */
+  }
+
   .btn-getstarted {
     font-size: 10px;
     padding: 6px 12px;
   }
 
   .header .logo img {
-    margin-right: 4px;
-    width: 180px;
+    margin-right: -6px;
+    width: 170px;
   }
 }
 
