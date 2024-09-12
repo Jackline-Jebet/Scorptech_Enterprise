@@ -598,6 +598,13 @@ h6 {
   padding-top: 50px;
 }
 
+.footer .footer-top img {
+  width: 200px;
+  margin-bottom: 6px;
+  margin-left: -10px;  
+}
+
+
 .footer .social-links a {
   display: flex;
   align-items: center;
@@ -669,8 +676,9 @@ h6 {
   font-family: var(--heading-font);
 }
 
-.footer .footer-contact p {
+.footer .footer-contact p, h4 {
   margin-bottom: 5px;
+  margin-left: 15px;
 }
 
 .footer .copyright {
@@ -681,12 +689,17 @@ h6 {
 
 .footer .copyright p {
   margin-bottom: 0;
+  font-size: 13px;
 }
 
 .footer .credits {
+  font-family: cursive;
+  font-style: oblique;
   margin-top: 6px;
   font-size: 13px;
 }
+
+
 
 /*--------------------------------------------------------------
 # Preloader
