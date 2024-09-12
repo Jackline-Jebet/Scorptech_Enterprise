@@ -2114,16 +2114,22 @@ section,
 .recent-posts .post-box .readmore {
   display: flex;
   align-items: center;
-  font-weight: 600;
+  font-size: 14px;
+  /* font-weight: 600; */
   line-height: 1;
   transition: 0.3s;
   margin-top: 15px;
 }
 
+.recent-posts .post-box .readmore:hover {
+  transform: scale(0.9);
+}
+
 .recent-posts .post-box .readmore i {
   line-height: 0;
   margin-left: 4px;
-  font-size: 18px;
+  font-size: 14px;
+  margin-top: 2px;
 }
 
 .recent-posts .post-box:hover .post-title {
@@ -2275,6 +2281,27 @@ section,
   font-size: 14px;
   color: color-mix(in srgb, var(--accent-color), transparent 40%);
   margin-bottom: 0;
+}
+
+.blog-posts .readmore {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 100;
+  line-height: 1;
+  transition: 0.3s;
+  margin-top: 35px;
+}
+
+.blog-posts .readmore:hover {
+  transform: scale(1.1);
+}
+
+.blog-posts .readmore i {
+  line-height: 0;
+  margin-left: 4px;
+  font-size: 12px;
+  margin-top: 2px;
 }
 
 /*--------------------------------------------------------------
